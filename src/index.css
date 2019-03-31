@@ -1,14 +1,224 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  font-family: 'Lato', Console;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  background: linear-gradient(to bottom, #efefef, white) no-repeat;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 25px 0;
+}
+
+body > header {
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 1px 0px 8px rgb(200, 200, 200);
+}
+
+header .logo-search form {
+  width: 50%;
+}
+
+header .user {
+  float: right;
+}
+
+header .user a {
+  font-size: 13px;
+  color: #89949b;
+  padding-top: 5px;
+}
+
+main h2 {
+  margin-top: 4px;
+}
+
+main article {
+  display: inline-block;
+}
+
+h3 {
+  color: #b8c3c9;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  font-size: 14px;
+  font-weight: normal;
+  color: #828c92;
+}
+
+nav ul li a:hover {
+  color: #fe7f19;
+}
+
+nav ul li {
+  margin-top: 5px;
+}
+
+main header aside img {
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #cecece;
+}
+
+nav ul li:last-child {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #4b5c66;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 8px 0;
+}
+
+.name p {
+  color: #a0aab1;
+  font-size: 12px;
+}
+
+.name p img {
+  margin-left: 12px;
+}
+
+.stats-links {
+  color: #4b5c66;
+  font-size: 12px;
+  padding: 15px 0px 10px 0px;
+  border-bottom: 1px solid #e1e6e9;
+  margin-bottom: 20px;
+}
+
+.stats-links span,
+.stats-links a {
+  margin-right: 20px;
+}
+
+.stats-links a:last-child {
+  margin-right: 0;
+}
+
+.stats-links a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #4b5c66;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #4b5c66;
+}
+
+header form {
+  width: 100%;
+}
+
+input.search {
+  background: url('./img/icon/search.png') #ebeff1 no-repeat 8px;
+  box-shadow: none;
+  height: 28px;
+  width: 100%;
+  font-size: 13px;
+  padding: 3px 6px 3px 25px;
+  border: 1px solid #d0dde9;
+  margin: 0;
+  border-radius: 15px;
+  top: 11px;
+  box-shadow: inset 1px 1px 5px #d5d5d5;
+}
+
+input.submit {
+  display: none;
+}
+
+.station {
+  font-size: 12px;
+  color: #008fd5;
+  border-radius: 5px;
+  border: 1px solid #b8c3c9;
+  cursor: pointer;
+  padding: 7px 10px 7px 30px;
+  box-shadow: 1px 1px #d5d5d5;
+  background: url('./img/icon/station.png') no-repeat 8px;
+  transition: all 0.4s;
+}
+
+.station:hover {
+  background-color: #0a90d5;
+  color: white;
+  background-image: url('./img/icon/station-white.png');
+}
+
+#albums article {
+  font-size: 13px;
+  color: #89949b;
+  margin: 10px 0;
+}
+
+#albums article img {
+  border: 1px solid #cbcbcb;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+#albums article img:hover {
+  box-shadow: 0 0 15px #848484;
+  transform: scale(1.1) rotate(-3deg);
+}
+
+#albums article figcaption {
+  color: #4b5c66;
+  margin-top: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#albums article .artist,
+#albums article .count {
+  margin-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#albums .explicit {
+  color: #ff5d5d;
+  margin-left: 5px;
+}
+
+nav.browse a,
+nav.music a {
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+nav a.heavy {
+  background: url('./img/icon/heavy.png') no-repeat 0px;
+}
+nav a.recent {
+  background: url('./img/icon/recent.png') no-repeat 0px;
+}
+nav a.top {
+  background: url('./img/icon/top.png') no-repeat 0px;
+}
+nav a.new {
+  background: url('./img/icon/new.png') no-repeat 0px;
+}
+nav a.collection {
+  background: url('./img/icon/collection.png') no-repeat 0px;
+}
+nav a.history {
+  background: url('./img/icon/history.png') no-repeat 0px;
 }
