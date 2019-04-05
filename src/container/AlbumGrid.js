@@ -36,7 +36,7 @@ export default class AlbumGrid extends Component {
             <Col xs="6" sm="6" md="3" lg="2">
               <Album
                 image="img/album/album_03.png"
-                nom="Wax Modern Vampires of th..."
+                nom="Wax Modern V..."
                 artist="Vampire Weekend"
                 song={12}
               />
@@ -81,7 +81,7 @@ export default class AlbumGrid extends Component {
             <Col xs="6" sm="6" md="3" lg="2">
               <Album
                 image="img/album/album_08.png"
-                nom="Modern Vampires of th..."
+                nom="Modern Vampires..."
                 artist="Vampire Weekend"
                 song={12}
               />

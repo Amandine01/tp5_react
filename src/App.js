@@ -13,23 +13,20 @@ class App extends Component {
     return (
       <Container>
         <Row>
-          <div>
-            <Row>
-              <Col xs="2">
-                <Header />
-                <SideMenu />
-              </Col>
-            </Row>
+          <Col xs="12" className="head">
+            <Header />
+          </Col>
 
-            <Row>
-              <Col xs="10">
-                <main>
-                  <Artist />
-                  <AlbumGrid />
-                </main>
-              </Col>
-            </Row>
-          </div>
+          <Col xs="2" className="d-none d-lg-block">
+            <SideMenu />
+          </Col>
+
+          <Col xs="10">
+            <main>
+              <Artist />
+              <AlbumGrid />
+            </main>
+          </Col>
         </Row>
       </Container>
     );

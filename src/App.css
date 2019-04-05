@@ -18,6 +18,11 @@
   color: white;
 }
 
+.head{
+  border-bottom: solid #c9d1d8 1px;
+  margin-bottom: 30px;
+}
+
 .App-link {
   color: #61dafb;
 }
