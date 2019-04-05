@@ -3,6 +3,13 @@ import logo from '../img/logo.png';
 import './Header.css'
 
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Container, Row, Col } from 'reactstrap';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPen);
+library.add(faPowerOff);
 
 class Header extends Component {
   constructor(props) {
@@ -45,20 +52,14 @@ class Header extends Component {
 
             <Col xs="3">
               <div class="user">
-                <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} className="couleur_drop">
                   <DropdownToggle caret>
                     Luke Chesser
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem header>Browse</DropdownItem>
-                    <DropdownItem>Heavy Rotation</DropdownItem>
-                    <DropdownItem>Recent Activity</DropdownItem>
-                    <DropdownItem>Top Charts</DropdownItem>
-                    <DropdownItem>New Releases</DropdownItem>
+                    <DropdownItem><FontAwesomeIcon icon="pen" /> Edit my profile</DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem header>Your music</DropdownItem>
-                    <DropdownItem>Collection</DropdownItem>
-                    <DropdownItem>History</DropdownItem>
+                    <DropdownItem><FontAwesomeIcon icon="power-off" /> Logout</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </div>
